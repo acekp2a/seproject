@@ -1,0 +1,5 @@
+cd /home/regulus/Downloads/ezw/work/
+cp -i $1 /home/regulus/Downloads/ezw/work/
+convert $2 -resize 512x512! $2
+make image=$2 filter=haar maxbytes=10000000
+rm $2
